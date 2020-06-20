@@ -135,4 +135,5 @@ Difference between reshape and resize is resize modifies the original data.
 6. ~arr - inverts an boolean array
 
 
-Note: Mostly Every function will be called using np but Array will be used functions like converting,view,Reshape,resize,sort,min,max,sum,slicing/indexing,co relation, transpose. And also for attributes array will be used to call the attributes(Shapes,size,Dtype)
+Note: 
+Mostly Every function will be called using np but Array will be used functions like converting,view,Reshape,resize,sort,min,max,sum,slicing/indexing,co relation, transpose. And also for attributes array will be used to call the attributes(Shapes,size,Dtype)
