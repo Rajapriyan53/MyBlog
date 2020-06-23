@@ -1,4 +1,5 @@
 baseURL = ""
 languageCode = "en-us"
 theme = "ananke"
+themesDir = "themes"
 title="Edify Blog"
