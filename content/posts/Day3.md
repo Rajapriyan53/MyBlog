@@ -44,16 +44,20 @@ Data representation
 
 Generally classified into three types.
 
-1. Steam and Leaf
-
+1. Steam and Leaf <br>
+<center>
+![Stem and Leaf](/images/stem_and_leaf.jpeg)
+</center>
 
 
 2. Frequency histograms
 
 
 3. Relative Frequency histograms
-
-
+<br> <center>
+![Relative Frequency histogram](/images/Relative_Frequency_histogram.jpg)
+<br>
+</center>
 
 Note: Very fine relative frequency histograms will gives smooth curve hiding the rectangular boxes. The values under the curve is called as Area under the curve.
 
