@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Day1 | Machine Learning 100 Days Challenges</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.72.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Day1" />
+<meta property="og:description" content="Numpy NumPy is a package in Python used for Scientific Computing. NumPy package is used to perform different operations. The ndarray (NumPy Array) is a multidimensional array used to store values of same datatype. These arrays are indexed just like Sequences, starts with zero.
+Here some of the important numpy array functions and properties.
+Importing and Exporting Options(Np. will be used to call the function)   np.loadtxt(&lsquo;filename.txt&rsquo;) -&gt; To load text file the path will be given in the parameter" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/day1/" />
+<meta property="article:published_time" content="2020-06-20T16:37:25+05:30" />
+<meta property="article:modified_time" content="2020-06-20T16:37:25+05:30" />
+<meta itemprop="name" content="Day1">
+<meta itemprop="description" content="Numpy NumPy is a package in Python used for Scientific Computing. NumPy package is used to perform different operations. The ndarray (NumPy Array) is a multidimensional array used to store values of same datatype. These arrays are indexed just like Sequences, starts with zero.
+Here some of the important numpy array functions and properties.
+Importing and Exporting Options(Np. will be used to call the function)   np.loadtxt(&lsquo;filename.txt&rsquo;) -&gt; To load text file the path will be given in the parameter">
+<meta itemprop="datePublished" content="2020-06-20T16:37:25&#43;05:30" />
+<meta itemprop="dateModified" content="2020-06-20T16:37:25&#43;05:30" />
+<meta itemprop="wordCount" content="543">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Day1"/>
+<meta name="twitter:description" content="Numpy NumPy is a package in Python used for Scientific Computing. NumPy package is used to perform different operations. The ndarray (NumPy Array) is a multidimensional array used to store values of same datatype. These arrays are indexed just like Sequences, starts with zero.
+Here some of the important numpy array functions and properties.
+Importing and Exporting Options(Np. will be used to call the function)   np.loadtxt(&lsquo;filename.txt&rsquo;) -&gt; To load text file the path will be given in the parameter"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Machine Learning 100 Days Challenges
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://example.org/posts/day1/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://example.org/posts/day1/&amp;text=Day1" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://example.org/posts/day1/&amp;title=Day1" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Day1</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-06-20T16:37:25&#43;05:30">June 20, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="numpy">Numpy</h2>
+<p>NumPy is a package in Python used for Scientific Computing. NumPy package is used to perform different operations. The ndarray (NumPy Array) is a multidimensional array used to store values of same datatype. These arrays are indexed just like Sequences, starts with zero.</p>
+<p>Here some of the important numpy array functions and properties.</p>
+<h3 id="importing-and-exporting-optionsnp-will-be-used-to-call-the-function">Importing and Exporting Options(Np. will be used to call the function)</h3>
+<ol>
+<li>
+<p>np.loadtxt(&lsquo;filename.txt&rsquo;) -&gt; To load text file the path will be given in the parameter</p>
+</li>
+<li>
+<p>np.genfromtxt(&lsquo;file.csv&rsquo;, delimiter=&rsquo;,') -&gt; To load csv file the path will be given in the parameter along with that delimiter will be also provided</p>
+</li>
+<li>
+<p>np.load(demp.npy) -&gt; To load the saved numpy array
+Allow pickle is optional in this parameter and it will restrict pickle data of the file if it set as true.</p>
+</li>
+<li>
+<p>np.savetxt(&lsquo;filename&rsquo;, delimiter=&rsquo;') -&gt; to save text file.</p>
+</li>
+</ol>
+<p>Note to save csv file delimter=&rsquo;,'(comma) will be used.</p>
+<h3 id="scalar-np-will-be-used-to-call-the-function">Scalar (Np. will be used to call the function)</h3>
+<ol>
+<li>
+<p>np.add(arr,1) -&gt; add 1 to all element</p>
+</li>
+<li>
+<p>np.subract(arr,arr2) -&gt;add arr and arr2</p>
+</li>
+<li>
+<p>mulitply(), divide(), sqrt()</p>
+</li>
+<li>
+<p>power(arr,2) or power(arr1, arr2)</p>
+</li>
+<li>
+<p>array_equal(arr1,arr2)</p>
+</li>
+<li>
+<p>sin(arr) ,log(arr), abs(arr), ceil(arr), floor(arr), round(arr)</p>
+</li>
+</ol>
+<p>Above are some of the functions which will perform actions according to the name of the functions.</p>
+<h3 id="statistics--arr-will-be-used-to-call-the-function-axis-will-be-parameter-to-mention-rowcolumn">Statistics ( arr will be used to call the function, axis will be parameter to mention row/column)</h3>
+<p>0-&gt; row and 1 -&gt; column</p>
+<ol>
+<li>
+<p>arr.sum() , min(), max(), corrcoef()</p>
+</li>
+<li>
+<p>np.var(arr), std(arr), mean(arr,axis=0/1)</p>
+</li>
+</ol>
+<h3 id="combiningsplitting-np">Combining/Splitting (NP)</h3>
+<ol>
+<li>
+<p>np.concatenate((arr,arr2),axis=0/1)</p>
+</li>
+<li>
+<p>np. split(arr,3) -&gt; Splits arr to 3 subarray</p>
+</li>
+<li>
+<p>np.hsplit(arr,5) -&gt; Horizontal split to 5 subarray</p>
+</li>
+</ol>
+<h3 id="addingremoving-elements-np">Adding/Removing Elements (NP)</h3>
+<ol>
+<li>
+<p>np.append(arr,values,axis=0/1) -&gt; Inserts at last</p>
+</li>
+<li>
+<p>np.insert(arr,position,values,axis)</p>
+</li>
+<li>
+<p>np.delete(arr,position,axis)</p>
+</li>
+</ol>
+<h3 id="inspecting-properties-arr">Inspecting Properties (arr)</h3>
+<ol>
+<li>
+<p>arr.size -&gt; Size of array</p>
+</li>
+<li>
+<p>arr.shape -&gt;Shape of array</p>
+</li>
+<li>
+<p>arr.dtype -&gt; Returns datatype</p>
+</li>
+</ol>
+<p>Note: These are not functions they are called attributes</p>
+<ol start="4">
+<li>
+<p>arr.astype(dtype) -&gt; Convert to other data type</p>
+</li>
+<li>
+<p>arr.tolist() -&gt; Convert to Python list</p>
+</li>
+</ol>
+<h3 id="generic-functions-np">Generic functions (NP)</h3>
+<ol>
+<li>np.info(np.eye) -&gt; Shows info about the nupy function</li>
+</ol>
+<h3 id="copyingsortingreshaping-arr">Copying/sorting/Reshaping (arr)</h3>
+<ol start="2">
+<li>
+<p>np.copy(arr) -&gt; Copies array</p>
+</li>
+<li>
+<p>arr.view(dtype) -&gt; creates view in specified data type.</p>
+</li>
+<li>
+<p>arr.sort(axis=1)-&gt; sort arrays</p>
+</li>
+<li>
+<p>two_d_arr.flatten() - &gt; flattens two d array to one dimension</p>
+</li>
+<li>
+<p>arr.T - Transpose array</p>
+</li>
+<li>
+<p>arr.reshape(3,4) -&gt; reshapes array</p>
+</li>
+<li>
+<p>arr.resize(5,6) -&gt; changes shapes to 5X6 and fills values with 0)</p>
+</li>
+</ol>
+<p>Difference between reshape and resize is resize modifies the original data.</p>
+<h3 id="creating-array-np">Creating Array (NP)</h3>
+<ol>
+<li>
+<p>np.array()</p>
+</li>
+<li>
+<p>np.zeros(3)</p>
+</li>
+<li>
+<p>np.ones((2,3))</p>
+</li>
+<li>
+<p>np.eye(N,M,k,dtype,Order) -&gt; Returns identical matrix (N-&gt; row, M-&gt; column,K=0 main diagonal, positive -&gt; upper, negative -&gt; lower, Order-&gt;{C/f}row/column wise store in memory)</p>
+</li>
+<li>
+<p>np.linspace(1,10,4) -&gt; Gives (1.0,3.0,5.0,7.0) Array of 5 evenly divided values from 0 to 10</p>
+</li>
+<li>
+<p>np.arange(0,10,3) -&gt; Gives (0,3,6,9) Array from 0 to 10 with step 3</p>
+</li>
+<li>
+<p>np.full((2,3),8) 2X3 array with all values 8</p>
+</li>
+<li>
+<p>np.random.rand(4,5) -&gt; 4X5 array with random float values (0 -1)</p>
+</li>
+<li>
+<p>np.random.rand(4,5)** 100  -&gt; same but with random values (0 to 100)</p>
+</li>
+<li>
+<p>np.random.randint(5,size=(2,3)) -&gt;2X3 array with random value 0-4</p>
+</li>
+</ol>
+<h3 id="indexingslicingsubsetting">Indexing/Slicing/Subsetting</h3>
+<ol>
+<li>
+<p>arr[0:3] Return the element from rows 0 to 2</p>
+</li>
+<li>
+<p>arr[0:3,4] Return the element from 0 to 2 of the 4 th column</p>
+</li>
+<li>
+<p>arr[:2] Return the element from beginning to 1 that is 0 and 1</p>
+</li>
+<li>
+<p>arr[:,1] Return every row of column 1 elements</p>
+</li>
+<li>
+<p>arr[arr&lt;5] - Return elements which is less than 5</p>
+</li>
+<li>
+<p>~arr - inverts an boolean array</p>
+</li>
+</ol>
+<p>Note:
+Mostly Every function will be called using np but Array will be used functions like converting,view,Reshape,resize,sort,min,max,sum,slicing/indexing,co relation, transpose. And also for attributes array will be used to call the attributes(Shapes,size,Dtype)</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  Machine Learning 100 Days Challenges 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

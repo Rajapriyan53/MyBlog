@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Machine Learning 100 Days Challenges</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on Machine Learning 100 Days Challenges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jun 2020 16:37:25 +0530</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Day1</title>
+      <link>http://example.org/posts/day1/</link>
+      <pubDate>Sat, 20 Jun 2020 16:37:25 +0530</pubDate>
+      
+      <guid>http://example.org/posts/day1/</guid>
+      <description>Numpy NumPy is a package in Python used for Scientific Computing. NumPy package is used to perform different operations. The ndarray (NumPy Array) is a multidimensional array used to store values of same datatype. These arrays are indexed just like Sequences, starts with zero.
+Here some of the important numpy array functions and properties.
+Importing and Exporting Options(Np. will be used to call the function)   np.loadtxt(&amp;lsquo;filename.txt&amp;rsquo;) -&amp;gt; To load text file the path will be given in the parameter</description>
+    </item>
+    
+  </channel>
+</rss>
