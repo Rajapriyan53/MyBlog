@@ -1,4 +1,54 @@
 baseURL = ""
 languageCode = "en-us"
-title = "Machine Learning 100 Days Challenges"
-theme = "ananke"
+title = "LeaveIt"
+theme = "LeaveIt"
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+
+preserveTaxonomyNames = true
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[params]
+
+    author = "edify"                           # Author's name
+    avatar = "/images/me/dp.jpeg"           # Author's avatar
+     home_mode = "post"
+
+
+[params.social]
+    GitHub = "xxoo"
+    Email   = "xxoo"
+    Instagram = "xxoo"
+    Facebook = "xxoo"
+    Telegram = "xxoo"
