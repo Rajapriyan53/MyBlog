@@ -5,17 +5,17 @@ date: 2020-06-20
 draft: false
 ---
 
-<b>Difference between attributes and Methods</b>
+**Difference between attributes and Methods**
 
-<b>Attributes</b> - Returns the value eg arr.dtype
-<b>Methods</b> - Performs actions/calculations eg.arr.min()
+**Attributes** - Returns the value eg arr.dtype
+**Methods** - Performs actions/calculations eg.arr.min()
 
-<b>Difference between series and and Dictionary</b>
+**Difference between series and and Dictionary**
 
 Index can be duplicate in series but not in dictionary
 
 
-<b>General points</b>
+**General points**
 
 1. Sort_values uses quick_sort algorithm to sort the function.
 
