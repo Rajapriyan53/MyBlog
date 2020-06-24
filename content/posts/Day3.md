@@ -1,5 +1,7 @@
 ---
 title: "Day3"
+lastmod: 2020-06-23
+date: 2020-06-20
 draft: false
 ---
 <b>Intro to Statistics </b>
@@ -44,25 +46,17 @@ Collection of methods for collecting, displaying, analyzing, and drawing conclus
 <b>Data representation</b>
 
 Generally classified into three types.
-1. <b>Steam and Leaf </b><br>
-<center>
-<img src="stat/images/stem_and_leaf"/>
-</center>
+1. <b>Steam and Leaf </b><br><br>
+![Stem and Leaf](../stat/images/stem_and_leaf)
 
-
-2.<b> Frequency histograms</b>
-
-<center>
-
-<img src="stat/images/Frequency_histogram.jpg"/>
-</center>
+2. <b> Frequency histograms</b>
+<br><br>
+![Frequency histograms](../stat/images/Frequency_histogram.jpg)
 <br>
 3. <b>Relative Frequency histograms</b>
 <br> <br>
-<center>
-<img src="stat/images/Relative_Frequency_histogram.jpg"/>
-<br>
-</center>
+![Relative Frequency histograms](../stat/images/Relative_Frequency_histogram.jpg)
+
 <br><br>
 <b>Note:</b> Very fine relative frequency histograms will gives smooth curve hiding the rectangular boxes. The values under the curve is called as Area under the curve.
 <br><br>
@@ -81,9 +75,9 @@ Generally classified into three types.
 <center>
 
 <b>The Empirical Rule</b>
+![The Empirical Rule](../stat/images/Emprichal_Rule.jpg)
 
-<img src="stat/images/Emprichal_Rule.jpg"/>
 <br> <br>
 <b>Chebyshev's Theorem</b><br><br>
-<img src="stat/images/chebys.jpg"/>
+![Chebyshev's Theorem](../stat/images/chebys.jpg)
 </center>
