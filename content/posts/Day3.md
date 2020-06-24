@@ -44,7 +44,6 @@ Collection of methods for collecting, displaying, analyzing, and drawing conclus
 <b>Data representation</b>
 
 Generally classified into three types.
-
 1. <b>Steam and Leaf </b><br>
 <center>
 <img src="stat/images/stem_and_leaf"/>
@@ -81,7 +80,7 @@ Generally classified into three types.
 <b>Standard deviation</b> - Square root of Variance
 <center>
 
-<b>The Emprirical Rule</b>
+<b>The Empirical Rule</b>
 
 <img src="stat/images/Emprichal_Rule.jpg"/>
 <br> <br>
