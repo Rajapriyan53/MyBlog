@@ -2,35 +2,36 @@
 title: "Day3"
 draft: false
 ---
-Intro to Statistics
+<b>Intro to Statistics </b>
 
-Population - Total collection of objects that are of interest in a statistical study.
+<b>Population</b> - Total collection of objects that are of interest in a statistical study.
 
-Sample - Subset, is typically smaller than the population. In a statistical study, all elements of a sample are available for observation, which is not typically the case for a population.
+<b>Sample </b>- Subset, is typically smaller than the population. In a statistical study, all elements of a sample are available for observation, which is not typically the case for a population.
 
-Measurement -  Number or attribute computed for each member of a population or of a sample.
+<b>Measurement</b> -  Number or attribute computed for each member of a population or of a sample.
 
-Sample Data - Measurements of sample elements are Example Avg cost of sample of cars which is taken from population.
+<b>Sample Data</b> - Measurements of sample elements are Example Avg cost of sample of cars which is taken from population.
 
-Parameter - Characteristic of a population. In a statistical study the value of a parameter is typically unknown.
+<b>Parameter</b> - Characteristic of a population. In a statistical study the value of a parameter is typically unknown.
 
-Statistics - Number computed from the sample data.
+<b>Statistics</b> - Number computed from the sample data.
 
-General Definition: Statistics
-
+<b> General Definition: Statistics </b>
+<br>
 Collection of methods for collecting, displaying, analyzing, and drawing conclusions from data.
+<br>
 
-Descriptive statistics - Involves organizing, displaying, and describing data.
+<b>Descriptive statistics</b> - Involves organizing, displaying, and describing data.
 
-Inferential statistics - Involves drawing conclusions about a population based on information contained in a sample taken from that population.
+<b>Inferential statistics </b>- Involves drawing conclusions about a population based on information contained in a sample taken from that population.
 
-Data types
+<b>Data types</b>
 
-Qualitative data are measurements for which there is no natural numerical scale, but which consist of attributes, labels, or other non-numerical characteristics.
+<b>Qualitative data </b>are measurements for which there is no natural numerical scale, but which consist of attributes, labels, or other non-numerical characteristics.
 
-Quantitative data are numerical measurements that arise from a natural numerical scale.
+<b>Quantitative data</b> are numerical measurements that arise from a natural numerical scale.
 
-Note:
+<b>Note:</b>
 
 1. Sample values are also called as random variable because the value varies from sample to sample
 
@@ -40,46 +41,50 @@ Note:
 
 4. Unbiased (Di versed) Sampling gives us more accurate values of the population.
 
-Data representation
+<b>Data representation</b>
 
 Generally classified into three types.
 
-1. Steam and Leaf <br>
+1. <b>Steam and Leaf </b><br>
 <center>
-![Stem and Leaf](/images/stem_and_leaf.jpeg)
+<img src="stat/images/stem_and_leaf"/>
 </center>
 
 
-2. Frequency histograms
+2.<b> Frequency histograms</b>
 
+<center>
 
-3. Relative Frequency histograms
-<br> <center>
-![Relative Frequency histogram](/images/Relative_Frequency_histogram.jpg)
+<img src="stat/images/Frequency_histogram.jpg"/>
+</center>
+<br>
+3. <b>Relative Frequency histograms</b>
+<br> <br>
+<center>
+<img src="stat/images/Relative_Frequency_histogram.jpg"/>
 <br>
 </center>
+<br><br>
+<b>Note:</b> Very fine relative frequency histograms will gives smooth curve hiding the rectangular boxes. The values under the curve is called as Area under the curve.
+<br><br>
 
-Note: Very fine relative frequency histograms will gives smooth curve hiding the rectangular boxes. The values under the curve is called as Area under the curve.
+<b>Mean</b> - Average value of the data
 
+<b>Median</b> -  Arrange the data in numerical ascending order and find the position of the middle element
 
-Mean - Average value of the data
+<b>Mode</b> -  The highest frequency the particular data in data set
 
-Median -  Arrange the data in numerical ascending order and find the position of the middle element
+<b>Range</b> - Set is difference between its largest and smallest values
 
-Mode -  The highest frequency the particular data in data set
+<b>Variance</b> - (X- Mean)2/N for population for sample (X-Mean)2/n-1
 
-Range - Set is difference between its largest and smallest values
+<b>Standard deviation</b> - Square root of Variance
+<center>
 
-Variance - (X- Mean)2/N for population for sample (X-Mean)2/n-1
+<b>The Emprirical Rule</b>
 
-Standard deviation - Square root of Variance
-
-The Emprirical Rule
-
-The Empirical Rule
-
-Chebyshev's Theorem
-
-
-
-Chebyshev's Theorem day3 machinelearning Statistics
+<img src="stat/images/Emprichal_Rule.jpg"/>
+<br> <br>
+<b>Chebyshev's Theorem</b><br><br>
+<img src="stat/images/chebys.jpg"/>
+</center>
