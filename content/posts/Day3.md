@@ -4,7 +4,7 @@ lastmod: 2020-06-23
 date: 2020-06-20
 draft: false
 ---
-# Intro to Statistics 
+# Intro to Statistics
 
 **Population** - Total collection of objects that are of interest in a statistical study.
 
@@ -18,7 +18,7 @@ draft: false
 
 **Statistics** - Number computed from the sample data.
 
-** General Definition: Statistics **
+**General Definition: Statistics**
 <br>
 Collection of methods for collecting, displaying, analyzing, and drawing conclusions from data.
 <br>
@@ -46,10 +46,10 @@ Collection of methods for collecting, displaying, analyzing, and drawing conclus
 **Data representation**
 
 Generally classified into three types.
-1. **Steam and Leaf **<br><br>
+1. **Steam and Leaf**<br><br>
 ![Stem and Leaf](../stat/images/stem_and_leaf)
 
-2. ** Frequency histograms**
+2. **Frequency histograms**
 <br><br>
 ![Frequency histograms](../stat/images/Frequency_histogram.jpg)
 <br>
