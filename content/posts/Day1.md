@@ -138,3 +138,34 @@ Difference between reshape and resize is resize modifies the original data.
 
 Note:
 Mostly Every function will be called using np but Array will be used functions like converting,view,Reshape,resize,sort,min,max,sum,slicing/indexing,co relation, transpose. And also for attributes array will be used to call the attributes(Shapes,size,Dtype)
+
+
+** Adding Some more functions used **
+1. np.squeeze() -> Remove single-dimensional entries from the shape of an array.
+
+Eg:x = np.array([[[0], [1], [2]]])
+
+x.shape
+(1, 3, 1)
+
+np.squeeze(x).shape
+(3,)
+
+np.squeeze(x, axis=0).shape
+(3, 1)
+
+2. np.expand_dims() -> Insert a new axis that will appear at the axis position in the expanded array shape.
+
+Eg: x = np.array([1, 2])
+
+x.shape
+(2,)
+
+y = np.expand_dims(x, axis=1)
+
+y
+array([[1],
+       [2]])
+
+y.shape
+(2, 1)
