@@ -4,168 +4,105 @@ lastmod: 2020-06-23
 date: 2020-06-20
 draft: false
 ---
+## Python
 
-## Numpy
+#### Data types
 
-NumPy is a package in Python used for Scientific Computing. NumPy package is used to perform different operations. The ndarray (NumPy Array) is a multidimensional array used to store values of same datatype. These arrays are indexed just like Sequences, starts with zero.
+1. **Text type:**                  str  
+2. **Numeric Types:**         int, float, complex
+3. **Sequence Types:**  list, tuple, range
+4. **Mapping Type:** 	dict
+5. **Set Types:** 	set, frozenset
+6. **Boolean Type:** 	bool
+7. **Binary Types:** 	bytes, bytearray, memoryview
 
-Here some of the important numpy array functions and properties.
 
-### Importing and Exporting Options(Np. will be used to call the function)
 
-1. np.loadtxt('filename.txt') -> To load text file the path will be given in the parameter
+#### Storage Types
+ 
 
-2. np.genfromtxt('file.csv', delimiter=',') -> To load csv file the path will be given in the parameter along with that delimiter will be also provided
+1.  **List** is a collection which is ordered and changeable. Allows duplicate members. **Example**: thislist = \["apple", "banana", "cherry"\] <br>
 
-3. np.load(demp.npy) -> To load the saved numpy array
-Allow pickle is optional in this parameter and it will restrict pickle data of the file if it set as true.
+2.  **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members. **Example**:  thistuple = ("apple", "banana", "cherry") <br>
 
-4. np.savetxt('filename', delimiter='') -> to save text file.
+3.  **Set** is a collection which is unordered and unindexed. No duplicate members.**Example**:  thisset = {"apple", "banana", "cherry"}<br>
 
-Note to save csv file delimter=','(comma) will be used.
+4.  **Dictionary** is a collection which is unordered, changeable and indexed. No duplicate members. **Example**:   thisdict =  {  
+  "brand": "Ford",  
+  "model": "Mustang",  
+  "year": 1964  
+}
 
-### Scalar (Np. will be used to call the function)
 
-1. np.add(arr,1) -> add 1 to all element
+#### Lambda function
 
-2. np.subract(arr,arr2) ->add arr and arr2
+A lambda function is a small anonymous function.
 
-3. mulitply(), divide(), sqrt()
+A lambda function can take any number of arguments, but can only have one expression.
 
-4. power(arr,2) or power(arr1, arr2)
+**Example :**  x = lambda a : a + 10  
 
-5. array_equal(arr1,arr2)
+#### Class Example
 
-6. sin(arr) ,log(arr), abs(arr), ceil(arr), floor(arr), round(arr)
+class Person:  
+  def \_\_init\_\_(self, name, age):  
+    self.name = name  
+    self.age = age  
+  
+p1 = Person("John", 36)  
+  
+print(p1.name)  
+print(p1.age)
 
-Above are some of the functions which will perform actions according to the name of the functions.
+#### RegEx Functions
 
-### Statistics ( arr will be used to call the function, axis will be parameter to mention row/column)
-0-> row and 1 -> column
+1. **findall** - 	Returns a list containing all matches
+2. **search**- 	Returns a Match object if there is a match anywhere in the string
+3. **split**- 	Returns a list where the string has been split at each match
+4. **sub** - 	Replaces one or many matches with a string
 
-1. arr.sum() , min(), max(), corrcoef()
+      **Any Character Except New Line**
+\d      - Digit (0-9)
+\D      - Not a Digit (0-9)
+\w      - Word Character (a-z, A-Z, 0-9, _)
+\W      - Not a Word Character
+\s      - Whitespace (space, tab, newline)
+\S      - Not Whitespace (space, tab, newline)
 
-2. np.var(arr), std(arr), mean(arr,axis=0/1)
+\b      - Word Boundary
+\B      - Not a Word Boundary
+^       - Beginning of a String
+$       - End of a String
 
-### Combining/Splitting (NP)
+[]      - Matches Characters in brackets
+[^ ]    - Matches Characters NOT in brackets
+|       - Either Or
+( )     - Group
 
-1. np.concatenate((arr,arr2),axis=0/1)
+**Quantifiers:**
 
-2. np. split(arr,3) -> Splits arr to 3 subarray
+\*     0 or More
 
-3. np.hsplit(arr,5) -> Horizontal split to 5 subarray
+\+       1 or More
+      
+?       - 0 or One
 
-### Adding/Removing Elements (NP)
+{3}     - Exact Number
 
-1. np.append(arr,values,axis=0/1) -> Inserts at last
+{3,4}   - Range of Numbers (Minimum, Maximum)
 
-2. np.insert(arr,position,values,axis)
+**Examples:**
 
-3. np.delete(arr,position,axis)
++ pattern = re.compile(r'abc')
 
-### Inspecting Properties (arr)
++ matches = pattern.finditer(text_to_search)
 
-1. arr.size -> Size of array
++ for mat in matches:
+    print(mat)
+    
+**Output:**
+&lt;re.Match object; span=(1, 4), match='abc'&gt;
+&lt;re.Match object; span=(69, 72), match='abc'&gt;
 
-2. arr.shape ->Shape of array
 
-3. arr.dtype -> Returns datatype
 
-Note: These are not functions they are called attributes
-
-4. arr.astype(dtype) -> Convert to other data type
-
-6. arr.tolist() -> Convert to Python list
-
-### Generic functions (NP)
-
-1. np.info(np.eye) -> Shows info about the nupy function
-
-### Copying/sorting/Reshaping (arr)
-
-2. np.copy(arr) -> Copies array
-
-3. arr.view(dtype) -> creates view in specified data type.
-
-4. arr.sort(axis=1)-> sort arrays
-
-5. two_d_arr.flatten() - > flattens two d array to one dimension
-
-6. arr.T - Transpose array
-
-7. arr.reshape(3,4) -> reshapes array
-
-8. arr.resize(5,6) -> changes shapes to 5X6 and fills values with 0)
-
-Difference between reshape and resize is resize modifies the original data.
-
-### Creating Array (NP)
-
-1. np.array()
-
-2. np.zeros(3)
-
-3. np.ones((2,3))
-
-4. np.eye(N,M,k,dtype,Order) -> Returns identical matrix (N-> row, M-> column,K=0 main diagonal, positive -> upper, negative -> lower, Order->{C/f}row/column wise store in memory)
-
-5. np.linspace(1,10,4) -> Gives (1.0,3.0,5.0,7.0) Array of 5 evenly divided values from 0 to 10
-
-6. np.arange(0,10,3) -> Gives (0,3,6,9) Array from 0 to 10 with step 3
-
-7. np.full((2,3),8) 2X3 array with all values 8
-
-8. np.random.rand(4,5) -> 4X5 array with random float values (0 -1)
-
-9. np.random.rand(4,5)** 100  -> same but with random values (0 to 100)
-
-10. np.random.randint(5,size=(2,3)) ->2X3 array with random value 0-4
-
-### Indexing/Slicing/Subsetting
-
-1. arr[0:3] Return the element from rows 0 to 2
-
-2. arr[0:3,4] Return the element from 0 to 2 of the 4 th column
-
-3. arr[:2] Return the element from beginning to 1 that is 0 and 1
-
-4. arr[:,1] Return every row of column 1 elements
-
-5. arr[arr<5] - Return elements which is less than 5
-
-6. ~arr - inverts an boolean array
-
-
-Note:
-Mostly Every function will be called using np but Array will be used functions like converting,view,Reshape,resize,sort,min,max,sum,slicing/indexing,co relation, transpose. And also for attributes array will be used to call the attributes(Shapes,size,Dtype)
-
-
-** Adding Some more functions used **
-1. np.squeeze() -> Remove single-dimensional entries from the shape of an array.
-
-Eg:x = np.array([[[0], [1], [2]]])
-
-x.shape
-(1, 3, 1)
-
-np.squeeze(x).shape
-(3,)
-
-np.squeeze(x, axis=0).shape
-(3, 1)
-
-2. np.expand_dims() -> Insert a new axis that will appear at the axis position in the expanded array shape.
-
-Eg: x = np.array([1, 2])
-
-x.shape
-(2,)
-
-y = np.expand_dims(x, axis=1)
-
-y
-array([[1],
-       [2]])
-
-y.shape
-(2, 1)
